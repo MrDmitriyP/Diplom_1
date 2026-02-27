@@ -1,4 +1,4 @@
-package praktikum.praktikum;
+package praktikum;
 
 public enum IngredientType {
     SAUCE,

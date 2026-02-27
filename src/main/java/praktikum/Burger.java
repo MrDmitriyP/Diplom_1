@@ -1,4 +1,4 @@
-package praktikum.praktikum;
+package praktikum;
 
 import java.util.ArrayList;
 import java.util.List;
@@ -8,8 +8,16 @@ public class Burger {
     public Bun bun;
     public List<Ingredient> ingredients = new ArrayList<>();
 
+    public Bun getBuns() {
+        return bun;
+    }
+
     public void setBuns(Bun bun) {
         this.bun = bun;
+    }
+
+    public List<Ingredient> getIngredients() {
+        return new ArrayList<>(ingredients); // копия — безопасно
     }
 
     public void addIngredient(Ingredient ingredient) {
@@ -47,5 +55,4 @@ public class Burger {
 
         return receipt.toString();
     }
-
 }
